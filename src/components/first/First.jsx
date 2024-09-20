@@ -30,6 +30,7 @@ function First() {
       {/* images in react js */}
       <img src={'https://img.freepik.com/free-photo/colorful-design-with-spiral-design_188544-9588.jpg'}></img>
       
+      
     </div>
   )
 }

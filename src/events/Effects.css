@@ -1,0 +1,14 @@
+
+table{
+
+    width:100%;
+}
+    
+    tr{
+    border:solid 1px;
+    padding:10px;
+}
+td{
+    border:solid 1px;
+    padding:10px;
+}
