@@ -1,0 +1,19 @@
+
+.con{
+    margin:auto;
+    width:280px;
+   
+}
+.char{
+    display:grid;
+    grid-template-columns: 200px 200px;
+    grid-template-rows: 1fr;
+}
+.row{
+    padding:20px;
+}
+button{
+    margin:auto;
+    width:400px;
+   
+}
