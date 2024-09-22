@@ -10,6 +10,7 @@ function Asse() {
     phone:''
 
   });
+  let [sub,setSub]=useState(null);
   function handleChange(e)
   {
    let {name,value}=e.target;
@@ -19,7 +20,8 @@ function Asse() {
   function handleSubmit(e)
   {
     e.preventDefault();
-    console.log("data is",a);
+
+   setSub(a);
   }
 
   return (
@@ -76,7 +78,19 @@ function Asse() {
         </div>
 
         <button type="submit " className="text-primary">Register</button>
+       
       </form>
+      {
+          sub &&(
+            <div className="tab">
+              <h3>Submitted Data:</h3>
+              <p>Full Name: {sub.fullname}</p>
+          <p>Email: {sub.email}</p>
+          <p>Password: {sub.password}</p>
+          <p>Phone: {sub.phone}</p>
+            </div>
+          )
+        }
     </div>
   );
 }
